@@ -1,0 +1,34 @@
+include ../../_include/_defaultLayout_es.jade
+!!!
+html(lang="es")
+  head
+    mixin head()
+    script(src="/plugins/greensolutions.js")
+    
+    title Green Solutions S.A. - Energias Renovables
+    
+  body
+    #wrap
+      mixin top()
+      mixin header()
+
+      .container
+        .row
+          .col-md-6
+            h1.headline Energías renovables
+            p Con más de un 90% de electricidad proveniente de la energía hidráulica, Paraguay es la definición misma de una nación de energías renovables. 
+            p Sin embargo usa todavia solamente una pequeña parte de su potencial energético, sea hidroelectrico, fotovoltaico o de biomasa. La demanda por energía de los paises vecinos crece en forma acelerada beneficiando Paraguay como mayor exportador de energía per capita del mundo. También hay una demanda de energía electrica rápidamente creciente en el mercado interno y que no puede ser satisfecho por la administración nacional por una deficiencia de líneas de transmisión. Con una legislación nueva de una cooperación pública-privada se abren oportunidades de inversiones muy rentables con la finalidad de una decentralización de la producción energética. 
+            h3 Cubrimos:
+            ul
+              li Estudios de factibilidad (Due diligence)
+              li Estudios de impacto ambiental
+              li Planificación, ejecución y administración de proyectos fotovoltaicos e hidroeléctricos
+              li Manejo de inversiones de proyectos basado en PPAs (power purchase agreements)
+              li Manejo de bonos ambientales y emission trading.
+          .col-md-6
+            img(src="/img/energiasRenovables/Solar.jpg" class="img-thumbnail")
+            img(src="/img/energiasRenovables/caña.jpg" class="img-thumbnail")
+            img(src="/img/energiasRenovables/Biogas.jpg" class="img-thumbnail")
+      
+
+    mixin copyright()

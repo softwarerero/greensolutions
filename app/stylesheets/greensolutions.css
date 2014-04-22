@@ -1,0 +1,162 @@
+html,
+body {
+  height: 100%;
+//  font-family: 'Noto Serif', serif;
+  font-size: 16px;
+  color: #6F6F6F;
+}
+
+p, a, li {
+  color: #303030;
+  line-height: 1.6;
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  /* Negative indent footer by its height */
+  margin: 0 auto -430px;
+  /* Pad bottom by footer height */
+  padding: 0 0 430px;
+}
+/* Set the fixed height of the footer here */
+#footer {
+  min-height: 430px;
+  text-align: right;
+}
+
+#footer h1 {
+  font-size: 24px;
+}
+
+.footer-group p {
+  line-height: 1.0;
+}
+
+.copyright {
+  color: #DADADA;
+  font-size: 16px;
+}
+
+.copyright-space {
+  font-size: 13px;
+}
+
+a {
+  color: #72c02c;
+}
+
+a:focus, a:hover, a:active {
+  color: #72C02C;
+  text-decoration: none;
+}
+
+.top {
+  background: none repeat scroll 0 0 #FDFDFD;
+  border-bottom: 1px solid #F0F0F0;
+  padding-top: 0px;
+  color: #7C8082;
+  padding: 5px 0px;
+}
+
+.top .col-md-6 {
+  padding-left: 8px;
+}
+
+.top ul {
+  margin: 0;
+  padding: 0;
+}
+
+.top .top-v1-contacts li {
+  display: inline-block;
+  font-size: 12px;
+  margin-right: 15px;
+  padding: 5px 0;
+}
+
+.top .icon-envelope {
+  color: #72c02c;
+}
+
+.top ul.loginbar {
+  padding: 5px 0px;
+}
+
+
+.green { color: #72c02c; }
+
+/*Open menu automatically*/
+ul.nav li.dropdown:hover > ul.dropdown-menu {
+  display: block;
+}
+
+.container {
+  max-width: 100%;
+  margin-bottom: 10px;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#logo-header {
+  margin-top: 5px;
+  max-height: 80px;
+}
+
+h1, h2, h3, .breadcrumbs h1 {
+  color: #066739;
+}
+
+h1 {
+  color: #72C02C;
+  font-size: 28px;
+}
+
+.comeBack {
+  width: 100%;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.personal img {
+  height: 200px;
+}
+
+.service-blocks .img-thumbnail {
+  height: 180px;
+}
+
+.service {
+  margin-bottom: 10px;
+  overflow: hidden;
+  padding: 15px 15px 15px 5px;
+  min-height: 100px;
+}
+
+.service .service-icon {
+  padding: 0px;
+}
+
+.header {
+  //border: none;
+  margin-bottom: 15px;
+}
+
+.personal .alcides {
+  background-size: 100% auto;
+  border-radius: 250px;
+  height: 180px;
+  position: absolute;
+  width: 180px;
+}
+
+.personal .alcides {
+  background-image: url("/img/quienesSomos/alcides adorno.jpg");
+}

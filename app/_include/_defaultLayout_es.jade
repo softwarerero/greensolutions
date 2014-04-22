@@ -1,0 +1,115 @@
+mixin head(moreScripts)
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta http-equiv="content-language" content="es">
+  <meta name=description content="Green Solutions S.A. ofrece desarrollo de proyectos en Paraguay"/>
+  <meta name=keywords content="Green Solutions, Proyectos, Construcción, Asesoramiento, Agropequaria, Inmuebles"/>
+  <meta name="author" content="SUNCOM Systems (sun.com.py)">
+  <meta name="publisher" content="Green Solutions S.A.">
+  <meta name="copyright" content="Green Solutions S.A.">
+  link(href="/img/favicon.png", rel="shortcut icon")
+  link(rel="stylesheet", href="/stylesheets/app.css")
+  link(href='http://fonts.googleapis.com/css?family=Noto+Serif', rel='stylesheet', type='text/css')
+  script(src="/javascripts/app.js")
+
+mixin wrap()
+  mixin top()
+  mixin header()
+
+mixin top()
+  // Top
+  .top
+    .container
+      .row
+        .col-md-6
+          ul(class="list-unstyled top-v1-contacts")
+            li
+              i(class="icon-envelope")
+              Email: a(href="mailto:info@htmlstream.com") info@greensolutionssa.com
+            li.devider
+            li
+              i.icon-phone 
+              | Teléfono: (595) 21 603 513 
+        .col-md-6
+          ul(class="loginbar pull-right")
+            li
+              i.icon-globe
+              a Idiomas
+              ul.lenguages
+                li
+                  a(href="/en") English 
+                li 
+                  a(href="/de") Deutsch
+                li
+                  a(href="/es") Español
+                li 
+                  a(href="/pt") Portugês
+  // End Top    
+
+mixin header()
+  // Header    
+  .header
+    div(class="navbar navbar-default" role="navigation")
+      .container
+        // Brand and toggle get grouped for better mobile display
+        .navbar-header
+          button(type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse")
+            span(class="sr-only") Toggle navigation
+            span(class="icon-bar")
+            span(class="icon-bar")
+            span(class="icon-bar")
+          a(class="navbar-brand" href="/es")
+            img(id="logo-header" src="/img/logo.png" alt="Logo")
+
+        // Collect the nav links, forms, and other content for toggling
+        div(class="collapse navbar-collapse navbar-responsive-collapse")
+          ul(class="nav navbar-nav navbar-right")
+            li
+              a(href="/es/") Inicio 
+            li
+              a(href="/es/quienesSomos") Quienes Somos 
+            li(class="dropdown")
+              a(href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false") Areas de Trabajo 
+                i(class="icon-angle-down")
+              ul.dropdown-menu
+                li 
+                  a(href="/es/construccion") Construcción
+                li
+                  a(href="/es/energiasRenovables") Energias Renovables
+                li 
+                  a(href="/es/recursosNaturales") Recursos Naturales / Forestal
+                li 
+                  a(href="/es/agropecuario") Agropecuario
+  // End Header    
+
+mixin title(sub)
+  title Green Solutions S.A. - 
+    =sub
+
+mixin copyright()
+  #footer.copyright
+    .container
+      .row
+        .col-md-6
+          a(href="http://www.openstreetmap.org/note/150865")
+            img(src="/img/croquis.png" alt="Croquis" class="img-thumbnail")
+        .col-md-6
+          h1 Contáctenos, que sus éxitos son nuestros.
+          .footer-group
+            p Lic. Rosemarie Jann
+            p Campos Cervera 6421
+            p Asunción
+            p Paraguay
+            p
+              i.icon-phone 
+              | +595 21 603513
+          br
+          br
+          br
+          br
+          br
+          .copyright-space
+            p 2014 &copy; <span class='green'>Green Solutions S.A.</span> Todos los derechos reservados. 
+            p Diseño  
+              a(href="http://sun.com.py/html/es/index.html") SUNCOM Systems 
