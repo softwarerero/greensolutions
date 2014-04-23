@@ -9,21 +9,12 @@ html(lang="es")
     
   body
     #wrap
-      mixin top()
       mixin header()
       
       .container
         .row
           .col-md-6
             h1.headline Construcción
-            p El Paraguay experimenta un verdadero auge de la construcción. El alto crecimiento económico y la afluencia de inversiones extranjeras han causado una demanda extraordinaria de propiedades de calidad que no pueden ser satisfechas en un futuro cercano. Los precios inmbobiliarios todavia estan muy bajos en comparación internacional pero experimentan un aumento muy significante.
-            p Dentro de este panorama positivo abundan oportunidades de inversión con perspectivas financieras y de impacto ambiental muy prometedoras. 
-            p Encontrarán productos y servicios en el área de Ingeniería y Arquitectura con la mayor rentabilidad del mercado para nuestros clientes.
-          .col-md-6
-            img(src="/img/construccion/Parque de Paseos Villa Elisa.jpg" class="img-thumbnail")
-
-        .row
-          .col-md-6
             h3 NUESTROS SERIVCIOS PROFESIONALES
             h4 Consultoría y Asesoría 
             ul
@@ -39,13 +30,13 @@ html(lang="es")
               li Comercial y de Servicios	
               li Industrial
             h4 Ingeniería
-            ul 
+            ul
               li Estructuras de Hormigón Armado y Metal
               li Instalaciones Hidráulicas
               li Instalaciones Eléctricas
             h3 Obras
             h4 Contratista general de Obras Civiles e Industriales
-            ul 
+            ul
               li Residencias familiares
               li Edificios
               li Centros comerciales
@@ -53,12 +44,21 @@ html(lang="es")
               li Estructuras Metálicas
               li Instalaciones de servicios
               li Gasolineras
-              li Industrias agropecuarias 
-          .col-md-6
-            img(src="/img/construccion/Costanera Concepcion.jpg" class="img-thumbnail")
-            img(src="/img/construccion/Caja Mutual de Cooperativistas.jpg" class="img-thumbnail")
-            img(src="/img/construccion/Viviendas unifamiliares.jpg" class="img-thumbnail")
-            img(src="/img/construccion/Barrio Cerrado Luque.jpg" class="img-thumbnail")
+              li Industrias agropecuarias
 
+            p El Paraguay experimenta un verdadero auge de la construcción. El alto crecimiento económico y la afluencia de inversiones extranjeras han causado una demanda extraordinaria de propiedades de calidad que no pueden ser satisfechas en un futuro cercano. Los precios inmbobiliarios todavia estan muy bajos en comparación internacional pero experimentan un aumento muy significante.
+            p Dentro de este panorama positivo abundan oportunidades de inversión con perspectivas financieras y de impacto ambiental muy prometedoras. 
+            p Encontrarán productos y servicios en el área de Ingeniería y Arquitectura con la mayor rentabilidad del mercado para nuestros clientes.
+
+          .col-md-6
+            .row
+              .col-md-12
+                .lead-image
+                  img(src="/img/construccion/Costanera Concepcion.jpg" class="img-thumbnail")
+            .row2.thumbs
+              img(src="/img/construccion/Costanera Concepcion.jpg" class="img-responsive lead-thumb")
+              img(src="/img/construccion/Caja Mutual de Cooperativistas.jpg" class="img-responsive lead-thumb")
+              img(src="/img/construccion/Viviendas unifamiliares.jpg" class="img-responsive lead-thumb")
+              img(src="/img/construccion/Barrio Cerrado Luque.jpg" class="img-responsive lead-thumb")
 
     mixin copyright()

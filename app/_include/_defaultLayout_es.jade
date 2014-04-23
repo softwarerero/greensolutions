@@ -13,39 +13,6 @@ mixin head(moreScripts)
   link(href='http://fonts.googleapis.com/css?family=Noto+Serif', rel='stylesheet', type='text/css')
   script(src="/javascripts/app.js")
 
-mixin wrap()
-  mixin top()
-  mixin header()
-
-mixin top()
-  // Top
-  .top
-    .container
-      .row
-        .col-md-6
-          ul(class="list-unstyled top-v1-contacts")
-            li
-              i(class="icon-envelope")
-              Email: a(href="mailto:info@htmlstream.com") info@greensolutionssa.com
-            li.devider
-            li
-              i.icon-phone 
-              | Teléfono: (595) 21 603 513 
-        .col-md-6
-          ul(class="loginbar pull-right")
-            li
-              i.icon-globe
-              a Idiomas
-              ul.lenguages
-                li
-                  a(href="/en") English 
-                li 
-                  a(href="/de") Deutsch
-                li
-                  a(href="/es") Español
-                li 
-                  a(href="/pt") Portugês
-  // End Top    
 
 mixin header()
   // Header    
@@ -62,25 +29,45 @@ mixin header()
           a(class="navbar-brand" href="/es")
             img(id="logo-header" src="/img/logo.png" alt="Logo")
 
-        // Collect the nav links, forms, and other content for toggling
-        div(class="collapse navbar-collapse navbar-responsive-collapse")
-          ul(class="nav navbar-nav navbar-right")
-            li
-              a(href="/es/") Inicio 
-            li
-              a(href="/es/quienesSomos") Quienes Somos 
-            li(class="dropdown")
-              a(href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false") Areas de Trabajo 
-                i(class="icon-angle-down")
-              ul.dropdown-menu
-                li 
-                  a(href="/es/construccion") Construcción
-                li
-                  a(href="/es/energiasRenovables") Energias Renovables
-                li 
-                  a(href="/es/recursosNaturales") Recursos Naturales / Forestal
-                li 
-                  a(href="/es/agropecuario") Agropecuario
+        .right-float
+          div(class="collapse navbar-collapse navbar-responsive-collapse menu-lang")
+            ul(class="nav navbar-nav navbar-right")
+              li(class="dropdown")
+                a(href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false") <i class="icon-globe service-icon"></i> Idiomas 
+                  i(class="icon-angle-down")
+                ul.dropdown-menu
+                  li
+                    a(href="/en") English 
+                    li
+                      a(href="/de") Deutsch
+                    li
+                      a(href="/es") Español
+                    li
+                      a(href="/pt") Portugês
+
+          // Collect the nav links, forms, and other content for toggling
+          div(class="collapse navbar-collapse navbar-responsive-collapse")
+            ul(class="nav navbar-nav navbar-right")
+              li
+                a(href="/es/") Inicio
+              li
+                a(href="/es/quienesSomos") Quienes Somos
+              li
+                a(href="/es/referencias") Referencias
+              li(class="dropdown")
+                a(href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false") Areas de Trabajo 
+                  i(class="icon-angle-down")
+                ul.dropdown-menu
+                  li
+                    a(href="/es/agropecuario") Agropecuario
+                  li
+                    a(href="/es/forestal") Forestal y Ambiental
+                  li 
+                    a(href="/es/construccion") Construcción
+                  li
+                    a(href="/es/energiasRenovables") Energias Renovables
+
+
   // End Header    
 
 mixin title(sub)
@@ -93,23 +80,27 @@ mixin copyright()
       .row
         .col-md-6
           a(href="http://www.openstreetmap.org/note/150865")
-            img(src="/img/croquis.png" alt="Croquis" class="img-thumbnail")
-        .col-md-6
+            img(src="/img/croquis.png" alt="Croquis" class="img-thumbnail croquis")
+        .col-md-6.right
           h1 Contáctenos, que sus éxitos son nuestros.
           .footer-group
-            p Lic. Rosemarie Jann
             p Campos Cervera 6421
             p Asunción
             p Paraguay
             p
-              i.icon-phone 
+              i.icon-phone
               | +595 21 603513
+            p
+              i.icon-envelope
+              Email: a(href="mailto:info@htmlstream.com") info@greensolutionssa.com
           br
-          br
-          br
-          br
-          br
+          //br
+          //br
+          //br
+          //br
+      .row
+        .col-md-12
           .copyright-space
-            p 2014 &copy; <span class='green'>Green Solutions S.A.</span> Todos los derechos reservados. 
-            p Diseño  
+            &copy; 2014 <span class='green'>Green Solutions S.A.</span> Todos los derechos reservados. 
+            span.right Diseño
               a(href="http://sun.com.py/html/es/index.html") SUNCOM Systems 

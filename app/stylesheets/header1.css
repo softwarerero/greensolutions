@@ -1,16 +1,5 @@
 /*Top Bar (login, search etc.)
 ------------------------------------*/
-.top {
-	padding-top: 8px;
-}
-
-.top ul.loginbar {
-	margin: 0;
-	padding: 0;
-	z-index: 9999;
-	position: relative;
-}
-
 .top ul.loginbar > li {
 	display: inline;
 	list-style: none;

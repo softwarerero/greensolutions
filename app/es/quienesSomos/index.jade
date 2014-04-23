@@ -9,7 +9,6 @@ html(lang="es")
     
   body
     #wrap
-      mixin top()
       mixin header()
       // Content Part
       .container
@@ -26,28 +25,33 @@ html(lang="es")
             h2 Misión:
             p Inversion en producción sostenible para ganancias sostenibles.
         .row.headline.personal
-          .col-md-9
-            h2 Personal:
-            p <strong>Director: Presidente- Lic. Rosemarie Jann</strong>
           .col-md-3
+            h2 Presidente:
+            p <strong>Lic. Rosemarie Jann</strong>
+          .col-md-9
             img(src="/img/quienesSomos/rosemariejann.jpg" alt="Rosemarie Jann" class="img-thumbnail")
 
         .row.headline.personal
           .col-md-3
             h3 Grupo Construcciones:
             p Arq. Alcides Adorno
-            p Arq. Amando Peralta
+            button(class="btn btn-primary btn-lg" data-toggle="modal" data-target="#alcides")
+              | Biografía
           .col-md-3
             img(src="/img/quienesSomos/alcides adorno.jpg" alt="Alcides Adorno" class="img-thumbnail")
           .col-md-3
             h3 Grupo Forestal:
             p Ing. Juan Adolfo Romero
+            button(class="btn btn-primary btn-lg" data-toggle="modal" data-target="#adolfo")
+              | Biografía
           .col-md-3
             img(src="/img/quienesSomos/Adolfo Romero b&w.jpg" alt="Adolfo Romero" class="img-thumbnail")
         .row.headline.personal
           .col-md-3
             h3 Grupo Agropecuario:
             p Ing. Rodolfo von Glasenapp
+            button(class="btn btn-primary btn-lg" data-toggle="modal" data-target="#rodolfo")
+              | Biografía
           .col-md-3
             img(src="/img/quienesSomos/rodolfo.jpg" alt="Rodolfo von Glasenapp" class="img-thumbnail")
           .col-md-3
@@ -57,78 +61,50 @@ html(lang="es")
             img(src="/img/quienesSomos/rosemariejann.jpg" alt="Rosemarie Jann" class="img-thumbnail")
 
 
-        .row.headline
-          .col-md-12
-            h2 Referencias
-            table.table.table-striped
-              thead
-                tr
-                  th año
-                  th área del proyecto
-                  th proyectista
-                  th nombre del proyecto
-                  th nombre del cliente
-              tbody
-                tr
-                  td 1999
-                  td Forestal 
-                  td Dr. agr. Oliver Jann 
-                  td Estancia Tres Ollas
-                  td HMS Holz (incluir link)
-                tr
-                  td 2013
-                  td Agropecuario 
-                  td Dr. agr. Oliver Jann 
-                  td Aprovechamiento de residuos agrícolas para el engorde semintesivo
-                  td Riacho-i S.A. 
-                tr
-                  td 2012 
-                  td Agropecuario
-                  td Dr. agr. Oliver Jann 
-                  td Suelos y potencial productivo 
-                  td Riacho-i S.A.
-                tr
-                  td 2012/2013 
-                  td Ambiental 
-                  td Construcción de Estaciones de Peaje, Pesajes y Casetas de Control Policial de la Ruta Nacional Nº 10 
-                  td Ing. Adolfo Romero 
-                  td Aponte Latorre S.A.
-                tr
-                  td 2011 
-                  td Ambiental 
-                  td Elaboración y Presentación del CAB para la Pavimentación tipo Empedrado del Tramo: Arazapé, Yegros 
-                  td Ing. Adolfo Romero 
-                  td Consultora Guarani
-                tr
-                  td 2011 
-                  td Ambiental 
-                  td Elaboración y Presentación del CAB para la construcción del Puente Sobre el Río Tembey
-                  td Ing. Adolfo Romero 
-                  td Aponte Latorre S.A.
-                tr
-                  td 2010 
-                  td Ambiental 
-                  td Construcción de Pavimento Asfáltico en Zona de Relocalización Comercial Contrato “A”, Distrito de Encarnación, Departamento de Itapúa, República del Paraguay A
-                  td Ing. Adolfo Romero 
-                  td Consorcio Buena Vista
-                tr
-                  td 2010 
-                  td Ambiental 
-                  td Construcción de Pavimento Asfáltico en Zona de Relocalización Comercial Contrato “B”, Distrito de Encarnación, Departamento de Itapúa, República del Paraguay B 
-                  td Ing. Adolfo Romero 
-                  td ING. CARLOS GUEYRAUD
-                tr
-                  td 2009/2010 
-                  td Ambiental 
-                  td Construcción de Infraestructura y Equipamiento Faltante en la  Relocalización Comercial de Encarnación
-                  td Ing. Adolfo Romero
-                  td Concorcio Buena Vista
-                tr
-                  td 2008/2011 
-                  td Ambiental 
-                  td Relocalización del Aeropuerto de Encarnación 
-                  td Ing. Adolfo Romero, Consorcio EDB 
-                  td Constructora Asunción, para la Entidad Binacional Yacyretá
-      
+        //Modal Alcides Adorno
+        div(class="modal fade" id="alcides" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true")
+          .modal-dialog
+            .modal-content
+              .modal-header
+                button(type="button" class="close" data-dismiss="modal" aria-hidden="true") &times;
+                h4(class="modal-title" id="myModalLabel") Eladio Alcides Adorno Peña
+              .modal-body
+                p Culmina la Carrera de Arquitectura en la Universidad Nacional de Asunción, posteriormente cursa Postgrados en Administración de Finanzas y Didactica Universitaria. Se desempeña además, en el ámbito de la Docencia, siendo Profesor de la Catedra Construcciones 6 de la Facultad de Arquitectura de la Universidad Nacional de Asunción, y Profesor de la Catedra de Proyecto – Taller 8 en la Universidad Americana.
+                p Participo y fue premiado en numerosos Concursos  de Arquitectura y Urbanismo, entre los que se incluyen: Petrobras, Club Internacional de Tenis, Municipalidad de Villa Elisa, Santa Elena Country Club y Caja Mutual de Cooperativistas.
+                p Es autor de Obras como Parque Industrial Panamericano, Petrobras, Salon Vip Citibank que en la actualidad se encuentran en proceso de Construcción, también forman parte de sus Obras, las intervenciones urbanísticas, Plan de mejoramiento y Costaneras en ciudades como Concepción, Villa Elisa y Villeta, 
+                p En la actualidad lidera el Estudio de Arquitectura con Proyectos y Construcciones en varias Ciudades del País 
+              .modal-footer
+                button(type="button" class="btn btn-default" data-dismiss="modal") Close
+
+        //Modal Juan Adolfo Romero
+        div(class="modal fade" id="adolfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true")
+          .modal-dialog
+            .modal-content
+              .modal-header
+                button(type="button" class="close" data-dismiss="modal" aria-hidden="true") &times;
+                h4(class="modal-title" id="myModalLabel") JUAN ADOLFO ROMERO RIVEROS
+              .modal-body
+                p Juan Adolfo posee más de 10 años de experiencia en consultoría ambiental, desarrollo de proyectos ambientales y gerencia en sectores relacionados a las ciencias forestales, industria, ingeniería civil y energía renovable.
+                p Él cuenta un título de Ingeniero en Ciencias Forestales de la Universidad Nacional de Asunción y licencias como Consultor Forestal (Infona) y Consultor Ambiental (SEAM). Juan Adolfo obtuvo dos Masterados en Auditoria Ambiental y planificación de Ambientes Urbanos de la Universidad Nacional Autónoma de México.
+                p En el pasado se desempeño como consultor superior en Aponte Latorre y especialista ambiental en Consultora Guaraní. También fue responsable en la elaboración de estudios de impacto ambiental para importantes clients como Itaipu Binacional y Yacyreta.
+                p Actualmente Juan Adolfo es Presidente de la Asociación Paraguaya de Ingenieros Forestales y jefe del grupo de consultoría ambiental Greensolutions. El se encarga de diseñar las políticas ambientales para los proyectos y sirve de enlace con las instituciones nacionales y oficinas de licencias. 
+              .modal-footer
+                button(type="button" class="btn btn-default" data-dismiss="modal") Close
+
+        //Modal Rodolfo von Glasenapp
+        div(class="modal fade" id="rodolfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true")
+          .modal-dialog
+            .modal-content
+              .modal-header
+                button(type="button" class="close" data-dismiss="modal" aria-hidden="true") &times;
+                h4(class="modal-title" id="myModalLabel") Rodolfo von Glasenapp
+              .modal-body
+                p Rodolfo posee mas de 20 años de experiencia en manejo de estancias, desarrollo de negocios agrícolas y planificación del uso de la tierra.
+                p El cuenta con un título de Ingeniero en Ciencias Agrícolas de la Universidad Nacional de Asunción y licencias de Consultor Agrícola (Senave) y Consultor Ambiental (SEAM) y Infona. Rodolfo obtuvo dos Masterados, en Nutrición Animal (Piracicaba, Brasil) y Ciencias Ambientales y planificación del uso de la tierra de la Universidad Nacional de Asunción.
+                p El lideró numerosos proyectos de transformación de uso de tierra y negocios agrícolas, y trabajó como consejero para varias empresas Alemanas y Paraguayas como también instituciones y empresas multinacionales.
+                p Actualmente Rodolfo se desempeña como Consultor principal del grupo FD y consultor en jefe de Greensolutions. 
+              .modal-footer
+                button(type="button" class="btn btn-default" data-dismiss="modal") Close
+
 
     mixin copyright()

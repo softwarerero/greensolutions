@@ -9,12 +9,43 @@ html(lang="es")
     
   body
     #wrap
-      mixin top()
       mixin header()
-
         
       // Content Part
       .container
+
+        // Service Blocks 
+        div(class="row margin-bottom-10 service-blocks")
+          div(class="col-md-3 service-alternative")
+            a(href="/es/agropecuario")
+              .service
+                i(class="icon-globe service-icon")
+                .desc
+                  h4 Agropecuario
+              img(src="/img/nuestroObjetivo/corral copy.jpg" class="img-thumbnail")
+          a(href="/es/forestal")
+            div(class="col-md-3 service-alternative")
+              .service
+                i(class="glyphicon glyphicon-tree-deciduous service-icon")
+                .desc
+                  h4 Forestal y Ambiental
+              img(src="/img/nuestroObjetivo/bosque copy.jpg" class="img-thumbnail")
+          div(class="col-md-3 service-alternative")
+            a(href="/es/construccion")
+              .service
+                i(class="icon-building service-icon")
+                .desc
+                  h4 Construcción
+              img(src="/img/nuestroObjetivo/Barrio Cerrado Luque copy.jpg" class="img-thumbnail")
+          div(class="col-md-3 service-alternative")
+            a(href="/es/energiasRenovables")
+              .service
+                i(class="glyphicon glyphicon-refresh service-icon")
+                .desc
+                  h4 Energias Renovables
+              img(src="/img/nuestroObjetivo/caña copy.jpg" class="img-thumbnail")
+
+        // End Service Blokcs
 
         h1.headline Green Solutions - Nuestro objetivo
         p Rentabilidad y sostenibilidad son complementarios y no contradictorios.
@@ -26,40 +57,7 @@ html(lang="es")
         p Brindamos un servicio de consultoría para la elaboración, análisis y ejecución de proyectos. Asistimos en forma personal y profesional a inversionistas nacionales y extranjeros para la fundación corporativa en Paraguay.
         p Nuestro recurso principal es el equipo humano constituido de profesionales altamente calíficados en diferentes áreas del desarollo sostenible para la optimización de nuestros recursos naturales:
 
-        // Service Blocks 
-        div(class="row margin-bottom-10 service-blocks")
-          a(href="/es/recursosNaturales")
-            div(class="col-md-3 service-alternative")
-              .service
-                i(class="glyphicon glyphicon-tree-deciduous service-icon")
-                .desc
-                  h4 Forestal
-              img(src="/img/nuestroObjetivo/bosque copy.jpg" class="img-thumbnail")
-          div(class="col-md-3 service-alternative")
-            a(href="/es/agropecuario")
-              .service
-                i(class="icon-globe service-icon")
-                .desc
-                  h4 Agropecuaria
-              img(src="/img/nuestroObjetivo/corral copy.jpg" class="img-thumbnail")
-          div(class="col-md-3 service-alternative")
-            a(href="/es/energiasRenovables")
-              .service
-                i(class="glyphicon glyphicon-refresh service-icon")
-                .desc
-                  h4 Energias Renovables
-              img(src="/img/nuestroObjetivo/caña copy.jpg" class="img-thumbnail")
-          div(class="col-md-3 service-alternative")
-            a(href="/es/construccion")
-              .service
-                i(class="icon-building service-icon")
-                .desc
-                  h4 Construcción
-              img(src="/img/nuestroObjetivo/Barrio Cerrado Luque copy.jpg" class="img-thumbnail")
-        // End Service Blokcs
 
-  
-        
         // Portfolio Sorting Blocks
         //.sorting-block
           ul(class="sorting-nav sorting-nav-v1 text-center")

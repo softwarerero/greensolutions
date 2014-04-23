@@ -20,35 +20,6 @@
   </head>
   <body>
     <div id="wrap">
-      <!-- Top-->
-      <div class="top">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6">
-              <ul class="list-unstyled top-v1-contacts">
-                <li><i class="icon-envelope"></i>
-                  <Email><a href="mailto:info@htmlstream.com">info@greensolutionssa.com</a></Email>
-                </li>
-                <li class="devider"></li>
-                <li><i class="icon-phone"> </i>Teléfono: (595) 21 603 513 </li>
-              </ul>
-            </div>
-            <div class="col-md-6">
-              <ul class="loginbar pull-right">
-                <li><i class="icon-globe"></i><a>Idiomas</a>
-                  <ul class="lenguages">
-                    <li><a href="/en">English </a></li>
-                    <li> <a href="/de">Deutsch</a></li>
-                    <li><a href="/es">Español</a></li>
-                    <li> <a href="/pt">Portugês</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- End Top    -->
       <!-- Header    -->
       <div class="header">
         <div role="navigation" class="navbar navbar-default">
@@ -57,20 +28,36 @@
             <div class="navbar-header">
               <button type="button" data-toggle="collapse" data-target=".navbar-responsive-collapse" class="navbar-toggle"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="/es" class="navbar-brand"><img id="logo-header" src="/img/logo.png" alt="Logo"/></a>
             </div>
-            <!-- Collect the nav links, forms, and other content for toggling-->
-            <div class="collapse navbar-collapse navbar-responsive-collapse">
-              <ul class="nav navbar-nav navbar-right">
-                <li><a href="/es/">Inicio </a></li>
-                <li><a href="/es/quienesSomos">Quienes Somos </a></li>
-                <li class="dropdown"><a href="#" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" class="dropdown-toggle">Areas de Trabajo <i class="icon-angle-down"></i></a>
-                  <ul class="dropdown-menu">
-                    <li> <a href="/es/construccion">Construcción</a></li>
-                    <li><a href="/es/energiasRenovables">Energias Renovables</a></li>
-                    <li> <a href="/es/recursosNaturales">Recursos Naturales / Forestal</a></li>
-                    <li> <a href="/es/agropecuario">Agropecuario</a></li>
-                  </ul>
-                </li>
-              </ul>
+            <div class="right-float">
+              <div class="collapse navbar-collapse navbar-responsive-collapse menu-lang">
+                <ul class="nav navbar-nav navbar-right">
+                  <li class="dropdown"><a href="#" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" class="dropdown-toggle"><i class="icon-globe service-icon"></i> Idiomas <i class="icon-angle-down"></i></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="/en">English </a>
+                        <li><a href="/de">Deutsch</a></li>
+                        <li><a href="/es">Español</a></li>
+                        <li><a href="/pt">Portugês</a></li>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <!-- Collect the nav links, forms, and other content for toggling-->
+              <div class="collapse navbar-collapse navbar-responsive-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="/es/">Inicio</a></li>
+                  <li><a href="/es/quienesSomos">Quienes Somos</a></li>
+                  <li><a href="/es/referencias">Referencias</a></li>
+                  <li class="dropdown"><a href="#" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false" class="dropdown-toggle">Areas de Trabajo <i class="icon-angle-down"></i></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="/es/agropecuario">Agropecuario</a></li>
+                      <li><a href="/es/forestal">Forestal y Ambiental</a></li>
+                      <li> <a href="/es/construccion">Construcción</a></li>
+                      <li><a href="/es/energiasRenovables">Energias Renovables</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -96,22 +83,23 @@
           </div>
         </div>
         <div class="row headline personal">
-          <div class="col-md-9">
-            <h2>Personal:</h2>
-            <p><strong>Director: Presidente- Lic. Rosemarie Jann</strong></p>
+          <div class="col-md-3">
+            <h2>Presidente:</h2>
+            <p><strong>Lic. Rosemarie Jann</strong></p>
           </div>
-          <div class="col-md-3"><img src="/img/quienesSomos/rosemariejann.jpg" alt="Rosemarie Jann" class="img-thumbnail"></div>
+          <div class="col-md-9"><img src="/img/quienesSomos/rosemariejann.jpg" alt="Rosemarie Jann" class="img-thumbnail"></div>
         </div>
         <div class="row headline personal">
           <div class="col-md-3">
             <h3>Grupo Construcciones:</h3>
             <p>Arq. Alcides Adorno</p>
-            <p>Arq. Amando Peralta</p>
+            <button data-toggle="modal" data-target="#alcides" class="btn btn-primary btn-lg">Biografía</button>
           </div>
           <div class="col-md-3"><img src="/img/quienesSomos/alcides adorno.jpg" alt="Alcides Adorno" class="img-thumbnail"></div>
           <div class="col-md-3">
             <h3>Grupo Forestal:</h3>
             <p>Ing. Juan Adolfo Romero</p>
+            <button data-toggle="modal" data-target="#adolfo" class="btn btn-primary btn-lg">Biografía</button>
           </div>
           <div class="col-md-3"><img src="/img/quienesSomos/Adolfo Romero b&amp;w.jpg" alt="Adolfo Romero" class="img-thumbnail"></div>
         </div>
@@ -119,6 +107,7 @@
           <div class="col-md-3">
             <h3>Grupo Agropecuario:</h3>
             <p>Ing. Rodolfo von Glasenapp</p>
+            <button data-toggle="modal" data-target="#rodolfo" class="btn btn-primary btn-lg">Biografía</button>
           </div>
           <div class="col-md-3"><img src="/img/quienesSomos/rodolfo.jpg" alt="Rodolfo von Glasenapp" class="img-thumbnail"></div>
           <div class="col-md-3">
@@ -127,92 +116,64 @@
           </div>
           <div class="col-md-3"><img src="/img/quienesSomos/rosemariejann.jpg" alt="Rosemarie Jann" class="img-thumbnail"></div>
         </div>
-        <div class="row headline">
-          <div class="col-md-12">
-            <h2>Referencias</h2>
-            <table class="table table-striped">
-              <thead>
-                <tr>
-                  <th>año</th>
-                  <th>área del proyecto</th>
-                  <th>proyectista</th>
-                  <th>nombre del proyecto</th>
-                  <th>nombre del cliente</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>1999</td>
-                  <td>Forestal </td>
-                  <td>Dr. agr. Oliver Jann </td>
-                  <td>Estancia Tres Ollas</td>
-                  <td>HMS Holz (incluir link)</td>
-                </tr>
-                <tr>
-                  <td>2013</td>
-                  <td>Agropecuario </td>
-                  <td>Dr. agr. Oliver Jann </td>
-                  <td>Aprovechamiento de residuos agrícolas para el engorde semintesivo</td>
-                  <td>Riacho-i S.A. </td>
-                </tr>
-                <tr>
-                  <td>2012 </td>
-                  <td>Agropecuario</td>
-                  <td>Dr. agr. Oliver Jann </td>
-                  <td>Suelos y potencial productivo </td>
-                  <td>Riacho-i S.A.</td>
-                </tr>
-                <tr>
-                  <td>2012/2013 </td>
-                  <td>Ambiental </td>
-                  <td>Construcción de Estaciones de Peaje, Pesajes y Casetas de Control Policial de la Ruta Nacional Nº 10 </td>
-                  <td>Ing. Adolfo Romero </td>
-                  <td>Aponte Latorre S.A.</td>
-                </tr>
-                <tr>
-                  <td>2011 </td>
-                  <td>Ambiental </td>
-                  <td>Elaboración y Presentación del CAB para la Pavimentación tipo Empedrado del Tramo: Arazapé, Yegros </td>
-                  <td>Ing. Adolfo Romero </td>
-                  <td>Consultora Guarani</td>
-                </tr>
-                <tr>
-                  <td>2011 </td>
-                  <td>Ambiental </td>
-                  <td>Elaboración y Presentación del CAB para la construcción del Puente Sobre el Río Tembey</td>
-                  <td>Ing. Adolfo Romero </td>
-                  <td>Aponte Latorre S.A.</td>
-                </tr>
-                <tr>
-                  <td>2010 </td>
-                  <td>Ambiental </td>
-                  <td>Construcción de Pavimento Asfáltico en Zona de Relocalización Comercial Contrato “A”, Distrito de Encarnación, Departamento de Itapúa, República del Paraguay A</td>
-                  <td>Ing. Adolfo Romero </td>
-                  <td>Consorcio Buena Vista</td>
-                </tr>
-                <tr>
-                  <td>2010 </td>
-                  <td>Ambiental </td>
-                  <td>Construcción de Pavimento Asfáltico en Zona de Relocalización Comercial Contrato “B”, Distrito de Encarnación, Departamento de Itapúa, República del Paraguay B </td>
-                  <td>Ing. Adolfo Romero </td>
-                  <td>ING. CARLOS GUEYRAUD</td>
-                </tr>
-                <tr>
-                  <td>2009/2010 </td>
-                  <td>Ambiental </td>
-                  <td>Construcción de Infraestructura y Equipamiento Faltante en la  Relocalización Comercial de Encarnación</td>
-                  <td>Ing. Adolfo Romero</td>
-                  <td>Concorcio Buena Vista</td>
-                </tr>
-                <tr>
-                  <td>2008/2011 </td>
-                  <td>Ambiental </td>
-                  <td>Relocalización del Aeropuerto de Encarnación </td>
-                  <td>Ing. Adolfo Romero, Consorcio EDB </td>
-                  <td>Constructora Asunción, para la Entidad Binacional Yacyretá</td>
-                </tr>
-              </tbody>
-            </table>
+        <!--Modal Alcides Adorno-->
+        <div id="alcides" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" class="modal fade">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" data-dismiss="modal" aria-hidden="true" class="close">&times;</button>
+                <h4 id="myModalLabel" class="modal-title">Eladio Alcides Adorno Peña</h4>
+              </div>
+              <div class="modal-body">
+                <p>Culmina la Carrera de Arquitectura en la Universidad Nacional de Asunción, posteriormente cursa Postgrados en Administración de Finanzas y Didactica Universitaria. Se desempeña además, en el ámbito de la Docencia, siendo Profesor de la Catedra Construcciones 6 de la Facultad de Arquitectura de la Universidad Nacional de Asunción, y Profesor de la Catedra de Proyecto – Taller 8 en la Universidad Americana.</p>
+                <p>Participo y fue premiado en numerosos Concursos  de Arquitectura y Urbanismo, entre los que se incluyen: Petrobras, Club Internacional de Tenis, Municipalidad de Villa Elisa, Santa Elena Country Club y Caja Mutual de Cooperativistas.</p>
+                <p>Es autor de Obras como Parque Industrial Panamericano, Petrobras, Salon Vip Citibank que en la actualidad se encuentran en proceso de Construcción, también forman parte de sus Obras, las intervenciones urbanísticas, Plan de mejoramiento y Costaneras en ciudades como Concepción, Villa Elisa y Villeta, </p>
+                <p>En la actualidad lidera el Estudio de Arquitectura con Proyectos y Construcciones en varias Ciudades del País </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" data-dismiss="modal" class="btn btn-default">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Modal Juan Adolfo Romero-->
+        <div id="adolfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" class="modal fade">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" data-dismiss="modal" aria-hidden="true" class="close">&times;</button>
+                <h4 id="myModalLabel" class="modal-title">JUAN ADOLFO ROMERO RIVEROS</h4>
+              </div>
+              <div class="modal-body">
+                <p>Juan Adolfo posee más de 10 años de experiencia en consultoría ambiental, desarrollo de proyectos ambientales y gerencia en sectores relacionados a las ciencias forestales, industria, ingeniería civil y energía renovable.</p>
+                <p>Él cuenta un título de Ingeniero en Ciencias Forestales de la Universidad Nacional de Asunción y licencias como Consultor Forestal (Infona) y Consultor Ambiental (SEAM). Juan Adolfo obtuvo dos Masterados en Auditoria Ambiental y planificación de Ambientes Urbanos de la Universidad Nacional Autónoma de México.</p>
+                <p>En el pasado se desempeño como consultor superior en Aponte Latorre y especialista ambiental en Consultora Guaraní. También fue responsable en la elaboración de estudios de impacto ambiental para importantes clients como Itaipu Binacional y Yacyreta.</p>
+                <p>Actualmente Juan Adolfo es Presidente de la Asociación Paraguaya de Ingenieros Forestales y jefe del grupo de consultoría ambiental Greensolutions. El se encarga de diseñar las políticas ambientales para los proyectos y sirve de enlace con las instituciones nacionales y oficinas de licencias. </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" data-dismiss="modal" class="btn btn-default">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Modal Rodolfo von Glasenapp-->
+        <div id="rodolfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" class="modal fade">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" data-dismiss="modal" aria-hidden="true" class="close">&times;</button>
+                <h4 id="myModalLabel" class="modal-title">Rodolfo von Glasenapp</h4>
+              </div>
+              <div class="modal-body">
+                <p>Rodolfo posee mas de 20 años de experiencia en manejo de estancias, desarrollo de negocios agrícolas y planificación del uso de la tierra.</p>
+                <p>El cuenta con un título de Ingeniero en Ciencias Agrícolas de la Universidad Nacional de Asunción y licencias de Consultor Agrícola (Senave) y Consultor Ambiental (SEAM) y Infona. Rodolfo obtuvo dos Masterados, en Nutrición Animal (Piracicaba, Brasil) y Ciencias Ambientales y planificación del uso de la tierra de la Universidad Nacional de Asunción.</p>
+                <p>El lideró numerosos proyectos de transformación de uso de tierra y negocios agrícolas, y trabajó como consejero para varias empresas Alemanas y Paraguayas como también instituciones y empresas multinacionales.</p>
+                <p>Actualmente Rodolfo se desempeña como Consultor principal del grupo FD y consultor en jefe de Greensolutions. </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" data-dismiss="modal" class="btn btn-default">Close</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -220,20 +181,27 @@
     <div id="footer" class="copyright">
       <div class="container">
         <div class="row">
-          <div class="col-md-6"><a href="http://www.openstreetmap.org/note/150865"><img src="/img/croquis.png" alt="Croquis" class="img-thumbnail"/></a></div>
-          <div class="col-md-6">
+          <div class="col-md-6"><a href="http://www.openstreetmap.org/note/150865"><img src="/img/croquis.png" alt="Croquis" class="img-thumbnail croquis"/></a></div>
+          <div class="col-md-6 right">
             <h1>Contáctenos, que sus éxitos son nuestros.</h1>
             <div class="footer-group">
-              <p>Lic. Rosemarie Jann</p>
               <p>Campos Cervera 6421</p>
               <p>Asunción</p>
               <p>Paraguay</p>
-              <p><i class="icon-phone"> </i>+595 21 603513</p>
-            </div><br/><br/><br/><br/><br/>
-            <div class="copyright-space">
-              <p>2014 &copy; <span class='green'>Green Solutions S.A.</span> Todos los derechos reservados. </p>
-              <p>Diseño  <a href="http://sun.com.py/html/es/index.html">SUNCOM Systems </a></p>
-            </div>
+              <p><i class="icon-phone"></i>+595 21 603513</p>
+              <p><i class="icon-envelope"></i>
+                <Email><a href="mailto:info@htmlstream.com">info@greensolutionssa.com</a></Email>
+              </p>
+            </div><br/>
+            <!--br-->
+            <!--br-->
+            <!--br-->
+            <!--br-->
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="copyright-space">&copy; 2014 <span class='green'>Green Solutions S.A.</span> Todos los derechos reservados. <span class="right">Diseño<a href="http://sun.com.py/html/es/index.html">SUNCOM Systems </a></span></div>
           </div>
         </div>
       </div>
