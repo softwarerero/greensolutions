@@ -1,22 +1,53 @@
-include _include/_defaultLayout_en.jade
+include ./_include/_defaultLayout_es.jade
 !!!
 html(lang="es")
   head
     mixin head()
     script(src="/plugins/greensolutions.js")
-    
     title Green Solutions S.A. - Inicio
-    
   body
     #wrap
-      mixin top()
       mixin header()
       // Content Part
       .container
         // Service Blocks 
-        div(class="row margin-bottom-10")
-          h1.comeBack Come back soon!
-
-      
-
+        div(class="row margin-bottom-10 service-blocks")
+          div(class="col-md-3 service-alternative")
+            a(href="/es/agropecuario")
+              .service
+                i(class="icon-globe service-icon")
+                .desc
+                  h4 Agropecuario
+              img(src="/img/nuestroObjetivo/corral copy.jpg" class="img-thumbnail")
+          div(class="col-md-3 service-alternative")
+            a(href="/es/forestal")
+              .service
+                i(class="glyphicon glyphicon-tree-deciduous service-icon")
+                .desc
+                  h4 Ambiental y Forestal
+              img(src="/img/nuestroObjetivo/bosque copy.jpg" class="img-thumbnail")
+          div(class="col-md-3 service-alternative")
+            a(href="/es/construccion")
+              .service
+                i(class="icon-building service-icon")
+                .desc
+                  h4 Construcción
+              img(src="/img/nuestroObjetivo/Barrio Cerrado Luque copy.jpg" class="img-thumbnail")
+          div(class="col-md-3 service-alternative")
+            a(href="/es/energiasRenovables")
+              .service
+                i(class="glyphicon glyphicon-refresh service-icon")
+                .desc
+                  h4 Energias Renovables
+              img(src="/img/nuestroObjetivo/caña copy.jpg" class="img-thumbnail")
+        // End Service Blocks
+        h1.headline Green Solutions - Nuestro objetivo
+        blockquote
+          p
+            h4 Rentabilidad y sostenibilidad son complementarios y no contradictorios
+        p Siguiendo esta lema apuntamos a dirigir capitales para inversiones sustentables, altamente rentables con transparencia y seguridad jurídica, asegurando retornos sostenibles y seguros a largo plazo.
+        p Brindamos un servicio de consultoría multi-lingüe para la elaboración, análisis y ejecución de proyectos. Asistimos en forma personal y profesional a inversionistas nacionales y extranjeros para la fundación corporativa en Paraguay.
+        p Nuestro recurso principal es el equipo humano constituido de profesionales altamente calíficados en diferentes áreas del desarollo sostenible para la optimización de nuestros recursos naturales.
+        .clearfix
+      // End Content Part
     mixin copyright()
