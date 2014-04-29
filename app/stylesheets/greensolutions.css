@@ -88,7 +88,8 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 }
 
 #logo-header {
-  margin-top: 5px;
+  margin-top: 10px;
+  margin-left: 3px;
   max-height: 80px;
 }
 
@@ -112,7 +113,7 @@ h1 {
 }
 
 .service-blocks .img-thumbnail {
-  height: 180px;
+  min-height: 180px;
   margin-bottom: 20px;
 }
 
@@ -170,3 +171,48 @@ blockquote {
   margin: 0 0 20px;
   padding: 10px 20px;
 }
+
+.lead-image .caption {
+  /*background-color: rgba(0,0,0,0.5);*/
+  position: absolute;
+  z-index: 100;
+  -webkit-transition: all 3000ms ease-out;
+  -moz-transition: all 3000ms ease-out;
+  -o-transition: all 3000ms ease-out;
+  -ms-transition: all 3000ms ease-out;
+  transition: all 3000ms ease-out;
+  /*left: 0;*/
+
+  height: 50px;
+  /*width: 180px;*/
+  width: 100%;
+  /*margin-right: 220px;*/
+  display: none;
+  /*bottom: -60px;*/
+  /*line-height: 25pt;*/
+  /*top: 0px;*/
+  /*display: run-in;*/
+  /*text-align: center;*/
+
+  /*border-radius: 4px;*/
+  /*margin: 0px 0px 0px 15px;*/
+  opacity: 0.8;
+}
+
+.lead-image .caption p {
+  /*color: #fff;*/
+  color: #72C02C;
+  background-color: #fff;
+  /*opacity: 0.5;*/
+  padding-top: 10px;
+  padding: 15px;
+  font-weight: bold;
+  font-size: 120%;
+}
+
+.lead-image:hover .caption {
+  /*background-color: rgba(0,0,0,0.5);*/
+  top: 0px;
+  display: block;
+}
+
