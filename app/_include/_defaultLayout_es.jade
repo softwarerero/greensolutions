@@ -10,7 +10,6 @@ mixin head(moreScripts)
   <meta name="copyright" content="Green Solutions S.A.">
   link(href="/img/favicon.png", rel="icon", type="image/png")
   link(rel="stylesheet", href="/stylesheets/app.css")
-  link(href='http://fonts.googleapis.com/css?family=Noto+Serif', rel='stylesheet', type='text/css')
   script(src="/javascripts/app.js")
 
 
@@ -36,10 +35,10 @@ mixin header()
                 a(href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false") <i class="icon-globe service-icon"></i> Idiomas 
                   i(class="icon-angle-down")
                 ul.dropdown-menu
-                  //li
-                  //  a(href="/en") English 
-                  //li
-                  //  a(href="/de") Deutsch
+                  li
+                    a(href="/en") English 
+                  li
+                    a(href="/de") Deutsch
                   li
                     a(href="/es") Español
                   //li
@@ -91,16 +90,14 @@ mixin copyright()
               i.icon-phone 
               | +595 21 603513
             p
-              i.icon-envelope
-              Email: a(href="mailto:info@htmlstream.com") info@greensolutionssa.com
+              i.icon-envelope 
+              | Email:
+              script(type="text/javascript").
+                eval(unescape("%69%7a%70%62%78%37%37%3d%5b%27%25%36%39%25%36%65%25%36%36%25%36%66%27%2c%5b%27%25%36%33%25%36%66%25%36%64%27%2c%27%25%36%37%25%37%32%25%36%35%25%36%35%25%36%65%25%37%33%25%36%66%25%36%63%25%37%35%25%37%34%25%36%39%25%36%66%25%36%65%25%37%33%25%37%33%25%36%31%27%5d%2e%72%65%76%65%72%73%65%28%29%2e%6a%6f%69%6e%28%27%2e%27%29%5d%2e%6a%6f%69%6e%28%27%40%27%29%3b%69%76%66%79%75%34%38%3d%27%69%6e%66%6f%40%67%72%65%65%6e%73%6f%6c%75%74%69%6f%6e%73%73%61%2e%63%6f%6d%27%3b%64%6f%63%75%6d%65%6e%74%2e%77%72%69%74%65%28%69%76%66%79%75%34%38%2e%6c%69%6e%6b%28%27%6d%61%69%27%2b%27%6c%74%6f%3a%27%2b%69%7a%70%62%78%37%37%29%29%3b"))  
           br
-          //br
-          //br
-          //br
-          //br
       .row
         .col-md-12
           .copyright-space
             &copy; 2014 <span class='green'>Green Solutions S.A.</span> Todos los derechos reservados. 
-            span.right Diseño
+            span.right Desarrollo
               a(href="http://sun.com.py/html/es/index.html") SUNCOM Systems 

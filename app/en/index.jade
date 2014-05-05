@@ -3,129 +3,53 @@ include ../_include/_defaultLayout_en.jade
 html(lang="en")
   head
     mixin head()
-    script(src="/plugins/greensolutions.js")
-    
-    title Green Solutions S.A. - Home
-    
+    title Green Solutions S.A. - Start
   body
     #wrap
-      mixin top()
       mixin header()
-  
-      div(class="breadcrumbs margin-bottom-40")
-        .container
-          h1.pull-left Home
-  
       // Content Part
-      .container  
+      .container
         // Service Blocks 
-        .tag-box.tag-box-v1
-          p We pull our ass open for our clients all day. Sometimes we really would do something we like more like sailing or just a little barbecue. We really don't know if you deserve that we work so hard, but why don't you just call and buy some consulting or do a proyect with us, that would make our day much better. 
-            | We work in the following areas:
-        
-        div(class="row margin-bottom-10")
-          div(class="col-md-3 service-alternative")
-            .service
-              i(class="icon-building service-icon")
-              .desc
-                h4 Construction
-                p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh...
-          div(class="col-md-3 service-alternative")
-            .service
-              i(class="glyphicon glyphicon-refresh service-icon")
-              .desc
-                h4 Renewable Energies
-                p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh...
-          div(class="col-md-3 service-alternative")
-            .service
-              i(class="glyphicon glyphicon-tree-deciduous service-icon")
-              .desc
-                h4 Natural Resources
-                p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh...
-          div(class="col-md-3 service-alternative")
-            .service
-              i(class="icon-globe service-icon")
-              .desc
-                h4 Agriculture
-                p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh...
-        // End Service Blokcs
-  
-        .headline
-          h2 Projects
-  
-        // Portfolio Sorting Blocks
-        .sorting-block
-          ul(class="sorting-nav sorting-nav-v1 text-center")
-            li(class="filter" data-filter="all") All
-            li(class="filter" data-filter="category_1") Construction
-            li(class="filter" data-filter="category_2") Renewable Energies
-            li(class="filter" data-filter="category_3") Natural Resources
-            li(class="filter" data-filter="category_4") Agriculture
-    
-          ul(class="row sorting-grid")
-            li(class="col-md-3 col-sm-6 col-xs-12 mix mix_all category_1 category_3" data-cat="1")
-              a(href="#")
-                img(class="img-responsive" src="/img/main/11.jpg" alt="")
-                span(class="sorting-cover")
-                  span Un proyecto grande
-                  p Anim pariatur cliche reprehenderit
-            li(class="col-md-3 col-sm-6 col-xs-12 mix mix_all category_3 category_1" data-cat="3")
-              a(href="#")
-                img(class="img-responsive" src="/img/main/12.jpg" alt="")
-                span(class="sorting-cover")
-                  span Un proyecto grande
-                  p Anim pariatur cliche reprehenderit
-            li(class="col-md-3 col-sm-6 col-xs-12 mix mix_all category_2 category_1" data-cat="2")
-              a(href="#")
-                img(class="img-responsive" src="/img/main/13.jpg" alt="")
-                span(class="sorting-cover")
-                  span Un proyecto grande
-                  p Anim pariatur cliche reprehenderit
-            li(class="col-md-3 col-sm-6 col-xs-12 mix mix_all category_3 category_4" data-cat="3")
-              a(href="#")
-                img(class="img-responsive" src="/img/main/3.jpg" alt="")
-                span(class="sorting-cover")
-                  span Un proyecto grande
-                  p Anim pariatur cliche reprehenderit
-            li(class="col-md-3 col-sm-6 col-xs-12 mix mix_all category_2 category_1 category_4" data-cat="2")
-              a(href="#")
-                img(class="img-responsive" src="/img/main/2.jpg" alt="")
-                span(class="sorting-cover")
-                  span Un proyecto grande
-                  p Anim pariatur cliche reprehenderit
-            li(class="col-md-3 col-sm-6 col-xs-12 mix mix_all category_4" data-cat="1")
-              a(href="#")
-                img(class="img-responsive" src="/img/main/6.jpg" alt="")
-                span(class="sorting-cover")
-                  span Un proyecto grande
-                  p Anim pariatur cliche reprehenderit
-            li(class="col-md-3 col-sm-6 col-xs-12 mix mix_all category_2 category_3 category_4" data-cat="4")
-              a(href="#")
-                img(class="img-responsive" src="/img/main/8.jpg" alt="")
-                span(class="sorting-cover")
-                  span Un proyecto grande
-                  p Anim pariatur cliche reprehenderit
-            li(class="col-md-3 col-sm-6 col-xs-12 mix mix_all category_1 category_2 category_3" data-cat="1")
-              a(href="#")
-                img(class="img-responsive" src="/img/main/1.jpg" alt="")
-                span(class="sorting-cover")
-                  span Un proyecto grande
-                  p Anim pariatur cliche reprehenderit
-            li(class="col-md-3 col-sm-6 col-xs-12 mix mix_all category_4 category_2" data-cat="1")
-              a(href="#")
-                img(class="img-responsive" src="/img/main/11.jpg" alt="")
-                span(class="sorting-cover")
-                  span Un proyecto grande
-                  p Anim pariatur cliche reprehenderit
-            li(class="col-md-3 col-sm-6 col-xs-12 mix mix_all category_2 category_3" data-cat="3")
-              a(href="#")
-                img(class="img-responsive" src="/img/main/12.jpg" alt="")
-                span(class="sorting-cover")
-                  span Un proyecto grande
-                  p Anim pariatur cliche reprehenderit
-        
+        div(class="row margin-bottom-10 service-blocks")
+          .col-md-3.service-alternative
+            a(href="/en/agriculture")
+              .service
+                i(class="icon-globe service-icon")
+                .desc
+                  h4 Agriculture
+              img(src="/img/nuestroObjetivo/corral copy.jpg" class="img-thumbnail" alt="Agropecuario")
+          .col-md-3.service-alternative
+            a(href="/en/forestry")
+              .service
+                i(class="glyphicon glyphicon-tree-deciduous service-icon")
+                .desc
+                  h4 Environment and Forestry
+              img(src="/img/nuestroObjetivo/Estudio de calidad de agua.jpg" class="img-thumbnail" alt="Ambiental & Forestal")
+          .col-md-3.service-alternative
+            a(href="/en/construction")
+              .service
+                i(class="icon-building service-icon")
+                .desc
+                  h4 Construction
+              img(src="/img/nuestroObjetivo/Barrio Cerrado Luque copy.jpg" class="img-thumbnail" alt="Construcción")
+          .col-md-3.service-alternative
+            a(href="/en/renewableEnergies")
+              .service
+                i(class="glyphicon glyphicon-refresh service-icon")
+                .desc
+                  h4 Renewable Energies
+              img(src="/img/nuestroObjetivo/caña copy.jpg" class="img-thumbnail" alt="Energías Renovables")
+        // End Service Blocks
+        h1.headline Our Goal
+        blockquote
+          p
+            h4 Profitability and sustainability are complementary and not contradictory
+        p Following this motto, we aim to direct capital for sustainable and highly profitable investments, with transparency and legal certainty, ensuring lasting and safe long-term returns.
+        p We provide a multi-lingual consultancy service for the development, analysis and implementation of projects. We assist personally and professionally domestic and foreign investors for corporate foundation in Paraguay.
+        p Our main resource is our team, which consists of highly qualified professionals in different areas of sustainable development for an optimized use of our natural resources.
         .clearfix
-        // End Portfolio Sorting Blocks
       // End Content Part
 
     mixin copyright()
+    //mixin copyright()
+                  

@@ -3,20 +3,68 @@ include ../../_include/_defaultLayout_en.jade
 html(lang="en")
   head
     mixin head()
-    script(src="/plugins/greensolutions.js")
-    
     title Green Solutions S.A. - Construction
-    
+  
   body
     #wrap
-      mixin top()
       mixin header()
-      // Content Part
       .container
-        // Service Blocks 
-        div(class="row margin-bottom-10")
-          h1.comeBack Come back soon!
-
-      
-
-    mixin copyright()
+        .row
+          .col-md-6
+            h1.headline Construction
+            h3 OUR PROFESSIONAL SERVICES
+            h4 Advisory and Consultancy 
+            ul
+              li Investment analysis.
+              li Advice on purchase-sale of real estate.
+              li Valuations.
+              li Executive projects for construction companies and individuals.
+              li Management and supervision of civil works.
+            h3 Project development
+            h4 Architecture
+            ul
+              li Residential, family and multifamily.
+              li Commercial and services.	
+              li Industrial.
+            h4 Engineering
+            ul
+              li Reinforced concrete and metal structures
+              li Hydraulic installations
+              li Electrical installations
+            h3 Works
+            h4 General contractor for civil and industrial works.
+            ul
+              li Family residences
+              li Buildings
+              li Shopping centres
+              li Reinforced concrete structures
+              li Steel structures
+              li Services installations
+              li Gas stations
+              li Agricultural industries
+          
+          .col-md-6
+            .row
+              .col-md-12
+                .lead-image
+                  img(src="/img/construccion/Barrio Cerrado Luque 2010.jpg" class="img-thumbnail")
+                  span(class="caption")
+                    p Barrio Cerrado Luque 2010
+            .row2.thumbs
+              img(src="/img/construccion/Barrio Cerrado Luque 2010.jpg" class="img-responsive lead-thumb")
+              img(src="/img/construccion/Caja Mutual de Cooperativistas.jpg" class="img-responsive lead-thumb")
+              img(src="/img/construccion/Club Internacional de Tenis 2012.jpg" class="img-responsive lead-thumb")
+              img(src="/img/construccion/Costanera Concepcion 2011.jpg" class="img-responsive lead-thumb")
+              img(src="/img/construccion/Edificio Torre 2004.jpg" class="img-responsive lead-thumb")
+              img(src="/img/construccion/Parque de Paseos Villa Elisa 2010.jpg" class="img-responsive lead-thumb")
+              img(src="/img/construccion/Viviendas unifamiliares.jpg" class="img-responsive lead-thumb")
+        .row
+          .col-md-12
+            hr
+            p Paraguay is experiencing a boom in construction. Strong economic growth and the influx of foreign investments have caused an extraordinary demand for quality properties that cannot be met in the near future. House prices are still very low in international comparison but experience a significant increase.
+            p Within this positive outlook, abound investment opportunities with financial prospects and very promising environmental impact.
+            p  You will find products and services in the area of engineering and architecture with the highest market return for our clients.
+  
+  mixin copyright()
+  //  
+                   

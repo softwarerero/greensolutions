@@ -1,14 +1,53 @@
-include ../_include/_defaultLayout_en.jade
+include ../_include/_defaultLayout_de.jade
 !!!
-html(lang="es")
+html(lang="de")
   head
     mixin head()
-    script(src="/plugins/greensolutions.js")
-    title Green Solutions S.A. - Inicio
+    title Green Solutions S.A. - Start
+  
   body
     #wrap
-      mixin top()
       mixin header()
-
+      // Content Part
       .container
-        h1 Todo
+        // Service Blocks 
+        div(class="row margin-bottom-10 service-blocks")
+          .col-md-3.service-alternative
+            a(href="/de/landwirtschaft")
+              .service
+                i(class="icon-globe service-icon")
+                .desc
+                  h4 Landwirtschaft
+              img(src="/img/nuestroObjetivo/corral copy.jpg" class="img-thumbnail" alt="Landwirtschaft")
+          .col-md-3.service-alternative
+            a(href="/de/forst")
+              .service
+                i(class="glyphicon glyphicon-tree-deciduous service-icon")
+                .desc
+                  h4 Umwelt und Forst
+              img(src="/img/nuestroObjetivo/Estudio de calidad de agua.jpg" class="img-thumbnail" alt="Umwelt & Forst")
+          .col-md-3.service-alternative
+            a(href="/de/bau")
+              .service
+                i(class="icon-building service-icon")
+                .desc
+                  h4 Bau
+              img(src="/img/nuestroObjetivo/Barrio Cerrado Luque copy.jpg" class="img-thumbnail" alt="Bau")
+          .col-md-3.service-alternative
+            a(href="/de/erneuerbareEnergien")
+              .service
+                i(class="glyphicon glyphicon-refresh service-icon")
+                .desc
+                  h4 Erneuerbare Energien
+              img(src="/img/nuestroObjetivo/caña copy.jpg" class="img-thumbnail" alt="Erneuerbare Energien")
+        // End Service Blocks
+        h1.headline Philosophie
+        blockquote
+          p
+            h4 Rendite und Nachhaltigkeit sind kein Widerspruch, sondern ergänzen sich
+        p Entsprechend diesem Motto koordinieren wir nachhaltige und hochrentable Investitionen, um Transparenz und Rechtssicherheit herzustellen und so langfristig sichere Renditen zu erzielen.
+        p Wir bieten einen vielsprachige Beratungsleistungen für Analyse, Planung und Implementation von Investitionsprojekten an. Damit unterstüzten wir nationale und internationales Investoren bei Projektplanungen und Firmengründungen in Paraguay.
+        p Unsere wichtigstes Instrument ist dabei ein Team hochqualifizierter Mitarbeiter aus verschiedenen Bereichen nachhaltiger Entwicklung mit langjähriger Erfahrung in der optimierten Nutzung unserer natürlicher Ressourcen.
+        .clearfix
+      // End Content Part
+    mixin copyright()

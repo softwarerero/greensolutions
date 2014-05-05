@@ -2,7 +2,7 @@ mixin head(moreScripts)
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta http-equiv="content-language" content="es">
+  <meta http-equiv="content-language" content="en">
   <meta name=description content="Green Solutions S.A. offers proyect development in Paraguay"/>
   <meta name=keywords content="Green Solutions, Projects, Construction, Consulting, Renewable Energies, Agriculture"/>
   <meta name="author" content="SUNCOM Systems (sun.com.py)">
@@ -33,10 +33,10 @@ mixin header()
                 a(href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false") <i class="icon-globe service-icon"></i> Idiomas 
                   i(class="icon-angle-down")
                 ul.dropdown-menu
-                  //li
-                  //  a(href="/en") English 
-                  //li
-                  //  a(href="/de") Deutsch
+                  li
+                    a(href="/en") English 
+                  li
+                    a(href="/de") Deutsch
                   li
                     a(href="/es") Español
                   //li
@@ -45,27 +45,28 @@ mixin header()
           div(class="collapse navbar-collapse navbar-responsive-collapse")
             ul(class="nav navbar-nav navbar-right")
               li
-                a(href="/es/") Inicio
+                a(href="/en/") Start
               li
-                a(href="/es/quienesSomos") Quienes Somos
+                a(href="/en/about") About
               li
-                a(href="/es/referencias") Referencias
+                a(href="/en/references") References
               li(class="dropdown")
-                a(href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false") Areas de Trabajo 
+                a(href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false") Groups 
                   i(class="icon-angle-down")
                 ul.dropdown-menu
                   li
-                    a(href="/es/agropecuario") Agropecuario
+                    a(href="/en/agriculture") Agriculture
                   li
-                    a(href="/es/forestal") Ambiental y Forestal
+                    a(href="/en/forestry") Evnironement and Forestry
                   li
-                    a(href="/es/construccion") Construcción
+                    a(href="/en/construction") Construction
                   li
-                    a(href="/es/energiasRenovables") Energias Renovables
-  // End Header    
+                    a(href="/en/renewableEnergies") Renewable Energies
+
 mixin title(sub)
   title Green Solutions S.A. - 
     =sub
+
 mixin copyright()
   #footer.copyright
     .container
@@ -74,25 +75,19 @@ mixin copyright()
           a(href="http://www.openstreetmap.org/note/150865")
             img(src="/img/croquis.png" alt="Croquis" class="img-thumbnail croquis")
         .col-md-6.right
-          h1 Contáctenos, que sus éxitos son nuestros.
+          h1 Contact us, your successes are ours.
           .footer-group
+            p Lic. Rosemarie Jann
             p Campos Cervera 6421
             p Asunción
             p Paraguay
             p
-              i.icon-phone
+              i.icon-phone 
               | +595 21 603513
-            p
-              i.icon-envelope
-              Email: a(href="mailto:info@htmlstream.com") info@greensolutionssa.com
           br
-          //br
-          //br
-          //br
-          //br
       .row
         .col-md-12
           .copyright-space
-            &copy; 2014 <span class='green'>Green Solutions S.A.</span> Todos los derechos reservados. 
-            span.right Diseño
+            &copy; 2014 <span class='green'>Green Solutions S.A.</span> All rights reserved. 
+            span.right Development
               a(href="http://sun.com.py/html/es/index.html") SUNCOM Systems 

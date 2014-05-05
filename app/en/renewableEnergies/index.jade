@@ -3,20 +3,53 @@ include ../../_include/_defaultLayout_en.jade
 html(lang="en")
   head
     mixin head()
-    script(src="/plugins/greensolutions.js")
-    
-    title Green Solutions S.A. - Renewable Energies
+    title Green Solutions S.A. - Renewable Energy
     
   body
     #wrap
-      mixin top()
       mixin header()
-      // Content Part
       .container
-        // Service Blocks 
-        div(class="row margin-bottom-10")
-          h1.comeBack Come back soon!
-
-      
-
+        .row
+          .col-md-6
+            h1.headline Renewable Energy
+            h3 OUR PROFESSIONAL SERVICES
+            h4 Advisory and Consultancy 
+            ul
+              li Feasibility studies (Due diligence)
+              li Environmental impact studies
+            h4 Project development 
+            ul
+              li Design and implementation of photovoltaic generators
+              li Elaboration of hydro-power and biogas projects 
+              li Design of hybrid systems
+              li Energy efficient lighting projects elaboration
+            h4 Project management 
+            ul
+              li Component importation and merchandising
+              li Installation of photovoltaic systems and hybrids
+              li Project investments management based on PPA (power purchase agreements)
+              li Environmental bonds and emission trading management.
+          .col-md-6
+            .row
+              .col-md-12
+                .lead-image
+                  img(src="/img/energiasRenovables/Biogas.jpg" class="img-thumbnail")
+                  span(class="caption")
+                    p Biogas
+            .row2.thumbs
+              img(src="/img/energiasRenovables/Biogas.jpg" class="img-responsive lead-thumb")
+              img(src="/img/energiasRenovables/Caña de azucar, Paraguari 2013.jpg" class="img-responsive lead-thumb")
+              img(src="/img/energiasRenovables/Esquema de producción de biogas de residuos domesticos.jpg" class="img-responsive lead-thumb")
+              img(src="/img/energiasRenovables/Potencial Hidroelectrico de la Zona Oriental.jpg" class="img-responsive lead-thumb")
+              img(src="/img/energiasRenovables/Recursos Hidricos Zona Oriental.jpg" class="img-responsive lead-thumb")
+              img(src="/img/energiasRenovables/Sistema Solar montado sobre techo.jpg" class="img-responsive lead-thumb")
+        
+        .row
+          .col-md-12
+            hr
+            p With over 90% of electricity coming from hydro-power, Paraguay is the very definition of a nation of renewable energy.
+            p However, it still uses only a small part of its energy potential, be it hydroelectric, photovoltaic or biomass. The energy demand of neighbouring countries is growing fast, benefiting Paraguay as the largest exporter of energy per capita in the world. There is also a rapidly growing demand for electric energy in the domestic market that can not be satisfied by the national administration due to the lack of transmission lines. With a new legislation for public-private partnership aiming to decentralise energy production, opportunities for profitable investments unfold.
+              
     mixin copyright()
+    //
+                 
