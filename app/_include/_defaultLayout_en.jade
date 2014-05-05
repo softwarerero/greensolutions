@@ -12,39 +12,6 @@ mixin head(moreScripts)
   link(rel="stylesheet", href="/stylesheets/app.css")
   script(src="/javascripts/app.js")
 
-mixin wrap()
-  mixin top()
-  mixin header()
-
-mixin top()
-  // Top
-  .top
-    .container
-      span.pull-left
-        ul(class="list-unstyled top-v1-contacts")
-          li
-            i(class="icon-envelope")
-            Email: a(href="mailto:info@htmlstream.com") info@greensolutionssa.com  
-          li.devider
-          li
-            i.icon-phone
-            | Hotline: (595) 21 603 513 
-      span.pull-right
-        ul.loginbar
-            li
-              i.icon-globe
-              a Languages
-              ul.lenguages
-                li
-                  a(href="/en") English 
-                li 
-                  a(href="/de") Deutsch
-                li
-                  a(href="/es") Español
-                li 
-                  a(href="/pt") Portugês
-  // End Top    
-
 mixin header()
   // Header    
   .header
@@ -57,38 +24,75 @@ mixin header()
             span(class="icon-bar")
             span(class="icon-bar")
             span(class="icon-bar")
-          a(class="navbar-brand" href="/en/index.html")
-            img(id="logo-header" src="/img/logo.png" alt="Logo")
-  
-        // Collect the nav links, forms, and other content for toggling
-        div(class="collapse navbar-collapse navbar-responsive-collapse")
-          ul(class="nav navbar-nav navbar-right")
-            li
-              a(href="/en/") Home 
-            li
-              a(href="/en/") Company 
-            li(class="dropdown")
-              a(href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false") Work Areas 
-                i(class="icon-angle-down")
-              ul.dropdown-menu
-                li 
-                  a(href="/en/construction") Construction
-                li
-                  a(href="/en/renewableEnergies") Renewable Energies
-                li 
-                  a(href="/en/naturalResources") Natural Resources
-                li 
-                  a(href="/en/agrigulture") Agriculture
+          a(class="navbar-brand" href="/es")
+            img(id="logo-header" src="/img/logo.png" alt="Logo Green Solutions")
+        .right-float
+          div(class="collapse navbar-collapse navbar-responsive-collapse menu-lang")
+            ul(class="nav navbar-nav navbar-right")
+              li(class="dropdown")
+                a(href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false") <i class="icon-globe service-icon"></i> Idiomas 
+                  i(class="icon-angle-down")
+                ul.dropdown-menu
+                  //li
+                  //  a(href="/en") English 
+                  //li
+                  //  a(href="/de") Deutsch
+                  li
+                    a(href="/es") Español
+                  //li
+                  //  a(href="/pt") Portugês
+          // Collect the nav links, forms, and other content for toggling
+          div(class="collapse navbar-collapse navbar-responsive-collapse")
+            ul(class="nav navbar-nav navbar-right")
+              li
+                a(href="/es/") Inicio
+              li
+                a(href="/es/quienesSomos") Quienes Somos
+              li
+                a(href="/es/referencias") Referencias
+              li(class="dropdown")
+                a(href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false") Areas de Trabajo 
+                  i(class="icon-angle-down")
+                ul.dropdown-menu
+                  li
+                    a(href="/es/agropecuario") Agropecuario
+                  li
+                    a(href="/es/forestal") Ambiental y Forestal
+                  li
+                    a(href="/es/construccion") Construcción
+                  li
+                    a(href="/es/energiasRenovables") Energias Renovables
   // End Header    
-
-
-
-
+mixin title(sub)
+  title Green Solutions S.A. - 
+    =sub
 mixin copyright()
   #footer.copyright
     .container
-      span.copyright-space.pull-left
-        | 2014 &copy; <span class='green'>Green Solutions S.A.</span> ALL Rights Reserved. 
-      span.copyright-space.pull-right
-        | Design  
-        a(href="http://sun.com.py/html/en/index.html") SUNCOM Systems 
+      .row
+        .col-md-6
+          a(href="http://www.openstreetmap.org/note/150865")
+            img(src="/img/croquis.png" alt="Croquis" class="img-thumbnail croquis")
+        .col-md-6.right
+          h1 Contáctenos, que sus éxitos son nuestros.
+          .footer-group
+            p Campos Cervera 6421
+            p Asunción
+            p Paraguay
+            p
+              i.icon-phone
+              | +595 21 603513
+            p
+              i.icon-envelope
+              Email: a(href="mailto:info@htmlstream.com") info@greensolutionssa.com
+          br
+          //br
+          //br
+          //br
+          //br
+      .row
+        .col-md-12
+          .copyright-space
+            &copy; 2014 <span class='green'>Green Solutions S.A.</span> Todos los derechos reservados. 
+            span.right Diseño
+              a(href="http://sun.com.py/html/es/index.html") SUNCOM Systems 
