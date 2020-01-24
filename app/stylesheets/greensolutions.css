@@ -1,7 +1,6 @@
 html,
 body {
   height: 100%;
-//  font-family: 'Noto Serif', serif;
   font-size: 16px;
   color: #6F6F6F;
 }
@@ -130,11 +129,9 @@ h1 {
 
 .service .desc h4 {
   font-size: 18px;
-  /*line-height: 25px;*/
 }
 
 .header {
-  //border: none;
   margin-bottom: 15px;
 }
 
@@ -157,9 +154,9 @@ h1 {
 
 .lead-thumb {
   float: left;
-  /*max-height: 70px;*/
   max-width: 16%;
   padding: 2px;
+  cursor: pointer;
 }
 
 .header .navbar-default .menu-lang .navbar-nav > li > a {
@@ -173,7 +170,6 @@ blockquote {
 }
 
 .lead-image .caption {
-  /*background-color: rgba(0,0,0,0.5);*/
   position: absolute;
   z-index: 100;
   -webkit-transition: all 3000ms ease-out;
@@ -181,29 +177,15 @@ blockquote {
   -o-transition: all 3000ms ease-out;
   -ms-transition: all 3000ms ease-out;
   transition: all 3000ms ease-out;
-  /*left: 0;*/
-
   height: 50px;
-  /*width: 180px;*/
   width: 100%;
-  /*margin-right: 220px;*/
   display: none;
-  /*bottom: -60px;*/
-  /*line-height: 25pt;*/
-  /*top: 0px;*/
-  /*display: run-in;*/
-  /*text-align: center;*/
-
-  /*border-radius: 4px;*/
-  /*margin: 0px 0px 0px 15px;*/
   opacity: 0.8;
 }
 
 .lead-image .caption p {
-  /*color: #fff;*/
   color: #72C02C;
   background-color: #fff;
-  /*opacity: 0.5;*/
   padding-top: 10px;
   padding: 15px;
   font-weight: bold;
@@ -211,7 +193,6 @@ blockquote {
 }
 
 .lead-image:hover .caption {
-  /*background-color: rgba(0,0,0,0.5);*/
   top: 0px;
   display: block;
 }
